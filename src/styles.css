@@ -1,5 +1,5 @@
 body {
-  background-color: #ecf1fd;
+  background-color: #c86b85;
   font-family: HelveticaNeue;
 }
 .container {
@@ -13,6 +13,7 @@ body {
 h1 {
   text-align: center;
   font-size: 35px;
+  color: #e6a4b4;
 }
 
 select {
@@ -22,6 +23,7 @@ select {
   border-radius: 4px;
   margin-bottom: 10px;
   font-family: HelveticaNeue;
+  color: #e6a4b4;
 }
 .current-location {
   text-align: center;
@@ -51,6 +53,7 @@ h2 {
   margin: 0 0 5px;
   font-size: 20px;
   padding-bottom: 5px;
+  color: #e6a4b4;
 }
 .date {
   font-size: 15px;
@@ -63,6 +66,7 @@ h2 {
 }
 footer {
   text-align: center;
+  color: #e6a4b4;
 }
 ul {
   list-style: none;
