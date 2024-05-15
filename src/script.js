@@ -20,8 +20,8 @@ function updateTime() {
     let lahoreDateElement = lahoreElement.querySelector(".date");
     let lahoreTimeElement = lahoreElement.querySelector(".time");
 
-    let lahoreDate = moment().tz("Asia/Karachi").format("dddd, Do YYYY");
-    let lahoreTime = moment().tz("Asia/Karachi").format("H:mm:ss");
+    let lahoreDate = moment().tz("Asia/Lahore").format("dddd, Do YYYY");
+    let lahoreTime = moment().tz("Asia/Lahore").format("H:mm:ss");
 
     lahoreDateElement.innerHTML = lahoreDate;
     lahoreTimeElement.innerHTML = lahoreTime;
