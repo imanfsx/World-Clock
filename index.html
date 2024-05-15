@@ -11,14 +11,41 @@
     <h1>World Clock</h1>
     <div class="container">
       <h1>World Clock</h1>
-
-      <select>
-        <option value="">Select a city..</option>
-        <option value="">London</option>
-        <option value="">New York</option>
-        <option value="">Auckland</option>
+      <select id="select-city">
+        <option value="">Choose a city</option>
+        <option value="current">My current location</option>
+        <option value="Europe/Moscow">Moscow 🇷🇺</option>
+        <option value="Europe/Paris">Paris 🇫🇷</option>
+        <option value="America/New_York">New York 🇺🇸</option>
+        <option value="Asia/Seoul">Seoul 🇰🇷</option>
       </select>
+      <section class="current-location">
+        <div class="local-time">Local Time</div>
+        <div class="current-location-time" id="current-location-time">
+          14:54:00
+        </div>
+        <div class="current-location-date" id="current-location-date">
+          Thursday, 2nd May 2024
+        </div>
+      </section>
 
+      <ul id="cities">
+        <li class="city" id="colombo">
+          <div>
+            <h2>Colombo 🇱🇰</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </li>
+        <li class="city" id="london">
+          <div>
+            <h2>London 🇬🇧</h2>
+            <div class="date"></div>
+          </div>
+          <div class="time"></div>
+        </li>
+      </ul>
+    </div>
       <div class="city">
         <h2>Los Angeles 🇺🇸</h2>
         <div class="date">August 15th 2022</div>
