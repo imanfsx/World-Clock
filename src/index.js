@@ -39,3 +39,31 @@ function updateTime() {
     sydneyTimeElement.innerHTML = sydneyTime;
   }
 }
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let citiesElement = document.querySelector("#cities");
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  if (cityTimeZone.length > 0) {
+    citiesElement.innerHTML = `<li class="city">
+          <div>
+            <h2>${cityName}</h2>
+            <div class="date">${cityTime.format("dddd, Do YYYY")}</div>
+          </div>
+          <div class="time">${cityTime.format("H:mm")}</div>
+        </li>
+        <a href="/">Home</a>`;
+  } else {
+    citiesElement.innerHTML = `<a href="/">Home</a>`;
+  }
+}
+
+let selectCityElement = document.querySelector("#select-city");
+selectCityElement.addEventListener("change", updateCity);
+
+updateTime();
+setInterval(updateTime, 1000);
