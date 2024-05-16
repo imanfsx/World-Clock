@@ -1,3 +1,5 @@
+moment.tz.add("Australia/Sydney|AEST AEDT|-a0 -b0");
+
 function updateTime() {
   let currentLocationDateElement = document.querySelector(
     "#current-location-date"
