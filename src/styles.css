@@ -65,7 +65,7 @@ span {
 }
 .country {
   font-size: 11px;
-  color: #06abcc;
+  color: #e6a4b4;
   font-weight: bolder;
   position: relative;
   top: -13px;
@@ -81,7 +81,7 @@ span {
   position: relative;
   left: 5px;
   text-decoration: none;
-  color: #06abcc;
+  color: #e6a4b4;
   font-size: 12px;
 }
 footer {
@@ -91,8 +91,5 @@ footer {
 }
 footer a {
   text-decoration: none;
-  color: #06abcc;
-  font-weight: bold;
-  background-color: #fdfdfdcf;
-  border-radius: 5px;
+  color: #e6a4b4;
 }
