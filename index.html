@@ -2,56 +2,76 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="src/styles.css" />
-    <title>World Clock - Iman Sohail</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.33/moment-timezone.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.45/moment-timezone-with-data-1970-2030.js"></script>
+
+    <title>Globe Glider</title>
   </head>
   <body>
+    <div class="header">
+      <h1>WORLD CLOCK</h1>
+    </div>
     <div class="container">
-      <h1><strong>World Clock 🌏</strong></h1>
-      <select id="select-city">
+      <select id="cities">
         <option value="">Choose a city</option>
-        <option value="current">My current location</option>
-        <option value="Europe/Moscow">Moscow 🇷🇺</option>
-        <option value="Europe/Paris">Paris 🇫🇷</option>
-        <option value="America/New_York">New York 🇺🇸</option>
-        <option value="Asia/Seoul">Seoul 🇰🇷</option>
+        <option value="current">Wherever you are</option>
+        <option value="Australia/Sydney">Sydney</option>
+        <option value="Asia/Seoul">Seoul</option>
+        <option value="Asia/Dubai">Dubai</option>
+        <option value="Europe/Bratislava">Bratislava</option>
+        <option value="America/Chicago">Chicago</option>
+        <option value="America/Nome">Nome</option>
       </select>
-      <section class="current-location">
-        <div class="local-time">Local Time</div>
-        <div class="current-location-time" id="current-location-time">
-          14:54:00
-        </div>
-        <div class="current-location-date" id="current-location-date">
-          Thursday, 2nd May 2024
-        </div>
-      </section>
-
-      <ul id="cities">
-        <li class="city" id="lahore">
-          <div>
-            <h2>Lahore ☪️</h2>
+      <div id="city">
+        <div class="section" id="kyoto">
+          <div class="city-date">
+            <div class="city">Kyoto</div>
             <div class="date"></div>
           </div>
-          <div class="time"></div>
-        </li>
-        <li class="city" id="sydney">
-          <div>
-            <h2>Sydney 🦘</h2>
+          <div class="time-country">
+            <div class="time"></div>
+            <div class="country">Japan</div>
+          </div>
+        </div>
+        <div class="section" id="singapore">
+          <div class="city-date">
+            <div class="city">Singapore</div>
             <div class="date"></div>
           </div>
-          <div class="time"></div>
-        </li>
-      </ul>
+          <div class="time-country">
+            <div class="time"></div>
+            <div class="country">Singapore</div>
+          </div>
+        </div>
+        <div class="section" id="bergen">
+          <div class="city-date">
+            <div class="city">Bergen</div>
+            <div class="date"></div>
+          </div>
+          <div class="time-country">
+            <div class="time"></div>
+            <div class="country">Norway</div>
+          </div>
+        </div>
+        <div class="section" id="new-york">
+          <div class="city-date">
+            <div class="city">New York</div>
+            <div class="date"></div>
+          </div>
+          <div class="time-country">
+            <div class="time"></div>
+            <div class="country">USA</div>
+          </div>
+        </div>
+      </div>
     </div>
     <footer>
       This project was coded with 💝 by Iman Sohail and is

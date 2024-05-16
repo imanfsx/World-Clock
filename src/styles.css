@@ -1,79 +1,98 @@
 body {
   background-color: #c86b85;
-  font-family: "Montserrat", sans-serif;
+}
+
+.header {
+  text-align: center;
+  font-family: Montserrat;
+  line-height: 12px;
 }
 .container {
-  max-width: 600px;
-  background-color: white;
-  margin: 60px auto;
+  font-family: Montserrat;
+  display: block;
+  margin: 30px auto;
+  background-color: #fdfbf7;
+  max-width: 400px;
   padding: 30px;
-  border-radius: 6px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-h1 {
-  text-align: center;
-  font-size: 35px;
-  color: #e6a4b4;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 18px 50px -10px;
 }
 
 select {
+  border: 1px dashed rgba(0, 0, 0, 0.2);
+  background-color: #fdfdfd;
+  font-family: Montserrat;
   width: 100%;
-  padding: 10px;
-  font-size: 15px;
-  border-radius: 4px;
+  padding: 7px;
+  border-radius: 5px;
   margin-bottom: 10px;
-  font-family: "Montserrat", sans-serif;
-  color: #e6a4b4;
-}
-.current-location {
-  text-align: center;
-  padding: 15px;
 }
 
-.local-time,
-.current-location-date {
-  font-size: 15px;
-  font-weight: 500;
-  opacity: 0.7;
-}
-.current-location-time {
-  font-size: 50px;
-  font-weight: 600;
-  padding: 10px;
-}
-.city {
+.section {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
-  background-color: #fafafa;
-  margin: 10px;
-  border-radius: 6px;
+  padding: 10px 10px 0;
+  border-bottom: 1px dashed rgba(0, 0, 0, 0.2);
 }
-h2 {
-  margin: 0 0 5px;
+.section:hover {
+  transform: scale(1.05);
+  transition: all 350ms ease-in-out;
+}
+.section:last-child {
+  border: none;
+}
+.city {
   font-size: 20px;
-  padding-bottom: 5px;
-  color: #e6a4b4;
+  font-weight: bolder;
+}
+.time {
+  font-size: 33px;
+  font-weight: bold;
+  font-family: Montserrat;
+}
+span {
+  font-size: 10px;
+  position: relative;
+  top: -15px;
+}
+.date,
+.country {
+  font-family: Montserrat;
+  font-size: 13px;
 }
 .date {
-  font-size: 15px;
   opacity: 0.6;
 }
+.country {
+  font-size: 11px;
+  color: #06abcc;
+  font-weight: bolder;
+  position: relative;
+  top: -13px;
+}
 
-.time {
-  font-size: 35px;
-  font-weight: 500;
+.city-date {
+  position: relative;
+  top: 12px;
+}
+.back {
+  display: block;
+  margin: 20px 0 0 auto;
+  position: relative;
+  left: 5px;
+  text-decoration: none;
+  color: #06abcc;
+  font-size: 12px;
 }
 footer {
   text-align: center;
-  color: white;
+  font-family: Montserrat;
+  font-size: 14px;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-footer {
-  padding: 0;
-  opacity: 0.7;
+footer a {
+  text-decoration: none;
+  color: #06abcc;
+  font-weight: bold;
+  background-color: #fdfdfdcf;
+  border-radius: 5px;
 }
